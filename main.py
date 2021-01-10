@@ -30,6 +30,7 @@ def main():
 
 		elif sys.argv[1] == "mirror" and sys.argv[2] == "--help":
 			print(f"{Fore.RED}[Image]: [.jpg]")
+			exit()
 
 	except ValueError:
 		pass
@@ -83,7 +84,19 @@ def main():
 
 	except IndexError:
 		clear()
-		print(f"{Fore.RED}Usage : python3 main.py [function]")
+		logo = f"""{Fore.RED}
+   ____                    ___           __          
+  /  _/_ _  ___ ____ ____ / _ \___ _____/ /_____ ____
+ _/ //  ' \/ _ `/ _ `/ -_) ___/ _ `/ __/  '_/ -_) __/
+/___/_/_/_/\_,_/\_, /\__/_/   \_,_/\__/_/\_\\__/_/   
+               /___/                                 
+
+               Dev By Hypostat1c
+               
+	Usage : python3 main.py [function]
+
+		"""
+		print(logo)
 
 	except ValueError:
 		clear()
@@ -96,8 +109,8 @@ def main():
 def rotate(image, rotation):
 	try:
 		image = Image.open(image)
-		rotated_image = image.rotate(rotation, expand=True, resample=Image.BICUBIC)
-		rotated_image.save("rotated_saved." + rotate_ext)
+		rotate = image.rotate(rotation, expand=True, resample=Image.BICUBIC)
+		rotate.save("rotated_saved." + rotate_ext)
 		clear()
 		print(f"{Fore.GREEN}Success : " + "rotated_saved." + rotate_ext)
 
