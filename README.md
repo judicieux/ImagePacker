@@ -1,6 +1,7 @@
 <img src=/img/imagepacker.png><br><br><img src="https://forthebadge.com/images/badges/built-with-love.svg" height="40" length="40"> <img src="https://forthebadge.com/images/badges/made-with-python.svg" height="40" length="40"> <img src="https://forthebadge.com/images/badges/fuck-it-ship-it.svg" height="40" length="40">
 # ImagePacker
 This script can modify and assemble images
+<video controls width="250"><source src="/img/rotate.mp4" type="video/mp4"></video>
 ### More specificly
 * rotate image     
 * crop image       
@@ -13,9 +14,6 @@ This script can modify and assemble images
 ```py
 rotated_image = image.rotate(90, expand=True, resample=Image.BICUBIC)
 ```
-
-<video controls width="250"><source src="/img/rotate.mp4" type="video/mp4"></video>
-
 **crop**
 ```py
 crop = image.crop((50, 100, 90, 30))
