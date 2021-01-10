@@ -1,2 +1,2 @@
 # ImagePacker
-This script can modify and assemble images.
+This script can modify and assemble images
