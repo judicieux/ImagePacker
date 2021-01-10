@@ -14,7 +14,7 @@ This script can modify and assemble images
 rotated_image = image.rotate(90, expand=True, resample=Image.BICUBIC)
 ```
 
-<video controls><source src="/img/rotate.mp4" type="video/mp4"></video>
+<video controls width="250"><source src="/img/rotate.mp4" type="video/mp4"></video>
 
 **crop**
 ```py
