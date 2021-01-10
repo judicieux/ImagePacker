@@ -18,19 +18,24 @@ rotated_image = image.rotate(90, expand=True, resample=Image.BICUBIC)
 ```py
 crop = image.crop((50, 100, 90, 30))
 ```
+<img src="/img/crop.gif"><br>
 **resize**
 ```py
 resize = image.resize((1920, 1080))
 ```
+<img src="/img/resize.gif"><br>
 **invert**
 ```py
 invert = ImageOps.invert(image)
 ```
+<img src="/img/invert.gif"><br>
 **flip**
 ```py
 flip = ImageOps.flip(image)
 ```
+<img src="/img/flip.gif"><br>
 **mirror**
 ```py
 mirror = ImageOps.mirror(image)
 ```
+<img src="/img/mirror.gif"><br>
