@@ -9,32 +9,32 @@ This script can modify and assemble images
 * flip image       
 * mirror image
 ## PIL
-**rotate**
+### rotate
 ```py
 rotated_image = image.rotate(90, expand=True, resample=Image.BICUBIC)
 ```
 <img src="/img/rotate.gif"><br>
-**crop**
+### crop
 ```py
 crop = image.crop((50, 100, 90, 30))
 ```
 <img src="/img/crop.gif"><br>
-**resize**
+### resize
 ```py
 resize = image.resize((1920, 1080))
 ```
 <img src="/img/resize.gif"><br>
-**invert**
+### invert
 ```py
 invert = ImageOps.invert(image)
 ```
 <img src="/img/invert.gif"><br>
-**flip**
+### flip
 ```py
 flip = ImageOps.flip(image)
 ```
 <img src="/img/flip.gif"><br>
-**mirror**
+### mirror
 ```py
 mirror = ImageOps.mirror(image)
 ```
